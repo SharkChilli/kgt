@@ -1,0 +1,13 @@
+{
+  "code": "200",
+  "msg": "请求成功",
+  "data": {
+      "key": 1,
+      "token": "9acb99fe92b1fe5a6339255a2587c1",
+      "isAcceptor": 0,
+      "blockAccountNo": "1.2.24",
+      "blockAccountId": "SharkChilli",
+      "hasPayPwd": "1",
+      "jumpbase": ""
+  }
+}

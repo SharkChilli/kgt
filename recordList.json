@@ -1,0 +1,48 @@
+{
+  "code": "200",
+  "msg": "请求成功",
+  "data": [
+    {
+      "key": 1,
+      "tradeType": 1,
+      "tradeStatus": 2,
+      "payType": "WX",
+      "dealCode": "123456",
+      "createTime": "2018-04-17 06:21:12",
+      "orderNo": "AI20180417142111535111",
+      "userConfirmFlag": 0,
+      "acceptorConfirmFlag": 0,
+      "acceptorBlockName": "kgt490d7c84ba5749d3a2aebcffjkhjkb7c5",
+      "userBlockName": "007",
+      "amount": 100
+    },
+    {
+      "key": 2,
+      "tradeType": 0,
+      "tradeStatus": 3,
+      "payType": "AP",
+      "dealCode": "123456",
+      "createTime": "2018-05-18 07:21:12",
+      "orderNo": "AI20180417142111535222",
+      "userConfirmFlag": 0,
+      "acceptorConfirmFlag": 0,
+      "acceptorBlockName": "kgt490d7c84ba5749d3afhjkhj62eebb6c1",
+      "userBlockName": "008",
+      "amount": 200
+    },
+    {
+      "key": 3,
+      "tradeType": 1,
+      "tradeStatus": 4,
+      "payType": "CARD",
+      "dealCode": "123456",
+      "createTime": "2018-06-19 08:21:12",
+      "orderNo": "AI20180417142111535333",
+      "userConfirmFlag": 0,
+      "acceptorConfirmFlag": 0,
+      "acceptorBlockName": "kgt490d7c84ba5749d3a2feklnfleeebb4c2",
+      "userBlockName": "009",
+      "amount": 300
+    }
+  ]
+}

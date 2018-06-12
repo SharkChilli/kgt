@@ -1,0 +1,34 @@
+{
+  "code": "200",
+  "msg": "请求成功",
+  "data": [
+    {
+      "key": 1,
+      "payStyleId": 3,
+      "userId": 5,
+      "symbol": "CNY",
+      "type": "WX",
+      "name": "鲨鱼辣椒",
+      "payAccount": "SharkChilli"
+    },
+    {
+      "key": 2,
+      "payStyleId": 4,
+      "userId": 5,
+      "symbol": "CNY",
+      "type": "AP",
+      "name": "王的男人",
+      "payAccount": "greenisgood"
+    },
+    {
+      "key": 3,
+      "payStyleId": 5,
+      "userId": 5,
+      "symbol": "CNY",
+      "type": "CARD",
+      "bank": "中国工商银行",
+      "name": "赵日天",
+      "payAccount": "greenisgood"
+    }
+  ]
+}

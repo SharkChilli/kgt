@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>K线图</title>
+    <meta charset="utf-8">
+    <link href="css/main.css" rel="stylesheet"/>
+    <style type="text/css">
+        html,body{
+            overflow: auto;
+        }
+        .kline {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<div class="kline">
+    <div id="kline_container"></div>
+</div>
+
+<script src="jquery.js"></script>
+<script src="jquery.mousewheel.js"></script>
+<script src="sockjs.js"></script>
+<script src="stomp.js"></script>
+<script src="kline.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var W = $(window).width(),
+        H = $(window).height();
+    var kline = new Kline({
+        element: "#kline_container",
+        width: W,
+        height: H,
+        theme: 'dark',
+        language: 'zh-cn',
+        ranges: ["1w", "1d", "1h", "30m", "15m", "5m", "1m", "line"],
+        symbol: "BTC",
+        symbolName: "BTC/USD",
+        type: "poll", // poll/socket
+        url: "./mock.json",
+        limit: 1000,
+        intervalTime: 5000,
+        debug: false,
+        showTrade: true
+    });
+    kline.draw();
+    $('#gasks,#gbids,.symbol-title').css("display","none"); // 隐藏侧边栏不需要内容
+    $(window).resize(function () {
+        var W = $(window).width(),
+            H = $(window).height();
+        setSize(kline,W,H);
+    });
+});
+    function setSize(obj,w,h){
+        obj.resize(w,h);
+    }
+</script>
+
+</body>
+</html>
